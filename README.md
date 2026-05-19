@@ -4,7 +4,7 @@
 **Date:** 2025  
 
 ## Project Overview and Importance
-This project involves a Discrete Event Simulation (DES) of a hospital Emergency Department (ED). The objective is to understand and optimize the system's performance under various load conditions and arrival rates. ERs are among the most critical systems in healthcare, where life-saving decisions are made under strict time constraints, limited resources, and volatile demand. 
+This project involves a Discrete Event Simulation (DES) of a hospital Emergency Room (ER). The objective is to understand and optimize the system's performance under various load conditions and arrival rates. ERs are among the most critical systems in healthcare, where life-saving decisions are made under strict time constraints, limited resources, and volatile demand. 
 
 The simulation models the complete patient journey, from arrival to discharge, admission, or death. There is differentiation between injury severity levels (Easy, Moderate, Severe) and prioritizing critical cases. Built upon insights gathered from an interview with a senior ER physician in the US, the model incorporates resources (doctors, nurses, beds), service times, queues, and critical events. This simulation serves as a data-driven decision-making tool for resource allocation, operational prioritization, and healthcare planning under uncertainty.
 
@@ -13,7 +13,7 @@ To evaluate system performance under varying conditions, the following research 
 * What is the average Length of Stay (LOS) for a patient in the system, the LOS for a severe patient, and the average number of severe patient deaths? How are these affected by various factors in the treatment process?
 * What is the optimal number of doctors and nurses to maximize ER efficiency?
 * What is the optimal allocation of resources for blood tests and X-ray machines to maximize system throughput?
-* How does the patient admission policy impact the mortality rate in the ED?
+* How does the patient admission policy impact the mortality rate in the ER?
 * How do the main KPIs change in response to different arrival rates?
 
 ## System Description
@@ -58,7 +58,7 @@ $$
 
 ## Assumptions
 To simplify the model while highlighting its scope and limitations, the following assumptions were made:
-1. **Parameter Validity:** Distributions and resource quantities are based on an interview with a senior ED doctor with over 20 years of experience at Henry Ford Hospital (Detroit, MI, USA).
+1. **Parameter Validity:** Distributions and resource quantities are based on an interview with a senior ER doctor with over 20 years of experience in the US.
 2. **Static Condition:** A patient's condition does not change during the simulation, except for severe patients who may die.
 3. **Continuous Workflow:** Staff works at a constant pace without breaks.
 4. **No Failures:** X-rays and blood tests are executed without errors or machine breakdowns.
