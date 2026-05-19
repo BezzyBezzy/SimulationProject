@@ -74,6 +74,7 @@ The experiments are divided into three categories:
 
 ## Challenges and Solutions
 In steady-state simulations, we addressed two primary statistical issues:
+* **Complexity of Queues:** Our system model includes 4 seperate queues, where some lead to others and are dependent on their results and others are not dependent on some of the queues. This layering of the system and the different results each queue may lead to contribute to the overall complexity of the system which our simulation tried to capture.
 * **Warm-up Period (Relaxation Time):** The system takes time to reach a steady state. We ran 25 replications and determined that the system stabilizes after 100 hours. Data collection only begins after this $d=100h$ warm-up period to prevent skewed results.
 * **Autocorrelation:** To solve data correlation issues, metrics were collected using a Batch Means approach (dividing data into 24-hour batches).
 
