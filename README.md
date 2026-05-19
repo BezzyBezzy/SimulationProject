@@ -20,6 +20,7 @@ To evaluate system performance under varying conditions, the following research 
 Based on a real-world ER, a Steady-State simulation model was built. The model tracks a patient from arrival to departure. The system includes several treatment stations: initial treatment, blood tests, X-rays, and final doctor diagnosis. Each station has associated resources and queues. The model accounts for three severity levels and applies probability-based processes and randomized service times based on defined distributions.
 
 ### System Components
+Note: the main code was done in Final_Simulation_ER jupyter notebook using the functions, classes and entities from the python files SimClasses, SimFunctions, SimRNG
 * **Entities:** Patients with varying conditions: Easy, Moderate, Severe.
 * **Resources:**
   * Beds: 90
